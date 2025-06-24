@@ -30,7 +30,7 @@ function Hero() {
           </p>
 
           <Link
-            href="/tasks"
+            href="https://app.creatorslab.cc/tasks"
             className="rounded-lg py-2 px-5 bg-gradient-to-br from-[#5D3FD1] to-[#03ABFF] text-white text-sm shadow-md"
           >
             Get started
