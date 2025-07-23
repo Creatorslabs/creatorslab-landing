@@ -20,20 +20,20 @@ function Hero() {
 
       <div className="flex flex-col md:flex-row px-4 py-10 md:px-16 md:py-20 max-w-7xl mx-auto items-center gap-10">
         {/* Left Text Section */}
-        <motion.div 
+        <motion.div
           className="flex-1 flex flex-col justify-center items-center md:items-start text-center md:text-left gap-6 z-10"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <motion.h1 
+          <motion.h1
             className="text-3xl sm:text-4xl lg:text-5xl font-syne font-extrabold leading-tight"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             Empowering Global Creativity with{" "}
-            <motion.span 
+            <motion.span
               className="bg-gradient-to-br from-[#5D3FD1] to-[#03ABFF] bg-clip-text text-transparent"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -42,8 +42,8 @@ function Hero() {
               Web3
             </motion.span>
           </motion.h1>
-          
-          <motion.p 
+
+          <motion.p
             className="text-base text-gray-500 max-w-md"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ function Hero() {
             whileTap={{ scale: 0.95 }}
           >
             <Link
-              href="https://app.creatorslab.cc/tasks"
+              href="https://app.creatorslab.cc/"
               className="rounded-lg py-2 px-5 bg-gradient-to-br from-[#5D3FD1] to-[#03ABFF] text-white text-sm shadow-md hover:shadow-lg transition-all duration-300"
             >
               Get started
@@ -70,7 +70,7 @@ function Hero() {
         </motion.div>
 
         {/* Right Image Section (hidden on mobile) */}
-        <motion.div 
+        <motion.div
           className="flex-1 hidden md:flex justify-end items-center relative"
           initial={{ opacity: 0, x: 50, rotate: -10 }}
           animate={{ opacity: 1, x: 0, rotate: 0 }}
@@ -80,25 +80,25 @@ function Hero() {
             className="absolute top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 
               w-[110%] h-[40%] bg-gradient-to-br from-[#03ABFF] via-[#2DB865] to-[#5D3FD1] 
               blur-[60px] opacity-30 rounded-full rotate-45 z-[-1]"
-            animate={{ 
+            animate={{
               rotate: [45, 55, 45],
-              scale: [1, 1.1, 1]
+              scale: [1, 1.1, 1],
             }}
-            transition={{ 
-              duration: 4, 
-              repeat: Infinity, 
-              ease: "easeInOut" 
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut",
             }}
           />
           <motion.div
-            animate={{ 
+            animate={{
               y: [0, -10, 0],
-              rotate: [0, 2, 0]
+              rotate: [0, 2, 0],
             }}
-            transition={{ 
-              duration: 3, 
-              repeat: Infinity, 
-              ease: "easeInOut" 
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: "easeInOut",
             }}
           >
             <Image
