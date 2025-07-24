@@ -8,35 +8,35 @@ import { motion } from "framer-motion";
 
 function TaskCard({ task, index }: { task: any; index: number }) {
   const cardVariants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       y: 50,
-      scale: 0.9
+      scale: 0.9,
     },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       scale: 1,
       transition: {
         duration: 0.6,
         delay: index * 0.1,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   return (
     <motion.div
       variants={cardVariants}
-      whileHover={{ 
-        y: -10, 
+      whileHover={{
+        y: -10,
         scale: 1.02,
-        transition: { duration: 0.3 }
+        transition: { duration: 0.3 },
       }}
       whileTap={{ scale: 0.98 }}
     >
       <Link
-        href={`/tasks/${task._id}`}
+        href={`https://app.creatorslab.cc/tasks`}
         className="bg-[#1a1a1a] border border-[#2b2b2b] rounded-xl overflow-hidden shadow-lg w-full max-w-md mx-auto transition hover:shadow-xl block"
       >
         {/* Image Section */}
@@ -53,7 +53,7 @@ function TaskCard({ task, index }: { task: any; index: number }) {
               className="object-cover"
             />
           </motion.div>
-          <motion.div 
+          <motion.div
             className="absolute bottom-[-20px] right-4 z-10"
             initial={{ scale: 0, rotate: -180 }}
             animate={{ scale: 1, rotate: 0 }}
@@ -61,7 +61,7 @@ function TaskCard({ task, index }: { task: any; index: number }) {
             whileHover={{ scale: 1.1, rotate: 5 }}
           >
             <Image
-              src="https://i.pravatar.cc/100"
+              src="/default-avatar.png"
               alt="creator avatar"
               quality={75}
               loader={({ src, width, quality }) =>
@@ -76,7 +76,7 @@ function TaskCard({ task, index }: { task: any; index: number }) {
 
         {/* Content Section */}
         <div className="p-4 pt-6 flex flex-col gap-2">
-          <motion.h3 
+          <motion.h3
             className="text-white font-bold text-lg"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -84,7 +84,7 @@ function TaskCard({ task, index }: { task: any; index: number }) {
           >
             {task.title}
           </motion.h3>
-          <motion.p 
+          <motion.p
             className="text-sm text-gray-400"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -94,14 +94,14 @@ function TaskCard({ task, index }: { task: any; index: number }) {
           </motion.p>
 
           {/* Footer Section */}
-          <motion.div 
+          <motion.div
             className="mt-4 flex items-center justify-between"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             {/* Reward Tag */}
-            <motion.div 
+            <motion.div
               className="px-3 py-1 text-sm rounded-md bg-[#6d28d9] text-white flex items-center gap-2"
               whileHover={{ scale: 1.05, backgroundColor: "#7c3aed" }}
               transition={{ duration: 0.2 }}
@@ -111,7 +111,7 @@ function TaskCard({ task, index }: { task: any; index: number }) {
 
             {/* Stats */}
             <div className="flex items-center gap-4 text-gray-400 text-sm">
-              <motion.div 
+              <motion.div
                 className="flex items-center gap-1"
                 whileHover={{ scale: 1.1, color: "#ef4444" }}
                 transition={{ duration: 0.2 }}
@@ -119,7 +119,7 @@ function TaskCard({ task, index }: { task: any; index: number }) {
                 <Heart size={14} fill="white" className="text-white" />
                 1.5k
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="flex items-center gap-1"
                 whileHover={{ scale: 1.1, color: "#3b82f6" }}
                 transition={{ duration: 0.2 }}
@@ -127,7 +127,7 @@ function TaskCard({ task, index }: { task: any; index: number }) {
                 <MessageCircle size={14} />
                 10k
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="flex items-center gap-1"
                 whileHover={{ scale: 1.1, color: "#10b981" }}
                 transition={{ duration: 0.2 }}
