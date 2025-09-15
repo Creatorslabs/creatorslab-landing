@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 function CTA() {
   return (
-    <motion.div 
+    <motion.div
       className="relative m-6 md:m-8 rounded-lg overflow-hidden bg-black"
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
@@ -22,15 +22,15 @@ function CTA() {
           className="object-cover object-center opacity-60"
           loading="lazy"
         />
-        <motion.div 
+        <motion.div
           className="absolute inset-0 bg-gradient-to-br from-[#5D3FD1] via-[#03ABFF] to-[#F4B30C] mix-blend-soft-light opacity-80"
-          animate={{ 
+          animate={{
             background: [
               "linear-gradient(45deg, #5D3FD1, #03ABFF, #F4B30C)",
               "linear-gradient(90deg, #03ABFF, #F4B30C, #5D3FD1)",
               "linear-gradient(135deg, #F4B30C, #5D3FD1, #03ABFF)",
-              "linear-gradient(45deg, #5D3FD1, #03ABFF, #F4B30C)"
-            ]
+              "linear-gradient(45deg, #5D3FD1, #03ABFF, #F4B30C)",
+            ],
           }}
           transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
         />
@@ -38,46 +38,55 @@ function CTA() {
       </div>
 
       <div className="relative z-20 p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8 text-white">
-        <motion.div 
+        <motion.div
           className="flex flex-col gap-4 w-full md:w-1/2"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <motion.h3 
+          <motion.h3
             className="text-2xl sm:text-3xl lg:text-4xl font-syne font-bold leading-tight"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            Earn, Engage and Expand with Creators Lab
+            Amplify Your Voice, Earn, and Grow
           </motion.h3>
-          <motion.p 
+          <motion.p
             className="text-sm sm:text-base"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            We are building more than just a platform — it&apos;s a decentralized
-            social network where builders and content creators thrive.
+            Complete tasks, engage with the community, and earn CLS rewards.
           </motion.p>
-          <motion.p 
+          <motion.p
             className="text-sm sm:text-base"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
             viewport={{ once: true }}
           >
-            Expand your reach, grow your influence, and connect with a global
-            Web3 community that values engagement.
+            Spend CLS to promote content, referral links, or campaigns, and
+            expand your network.
+          </motion.p>
+          <motion.p
+            className="text-sm sm:text-base"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Borrow gas instantly with GasPass to claim airdrops safely and
+            automatically.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
             viewport={{ once: true }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -86,12 +95,12 @@ function CTA() {
               href="/tasks"
               className="mt-2 px-5 py-3 inline-block rounded-md bg-white bg-opacity-20 text-white text-sm hover:bg-opacity-30 transition-all"
             >
-              Become a member
+              Start Earning
             </Link>
           </motion.div>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="w-full md:w-auto flex justify-center md:justify-end"
           initial={{ opacity: 0, x: 50, rotate: -10 }}
           whileInView={{ opacity: 1, x: 0, rotate: 0 }}
@@ -99,15 +108,11 @@ function CTA() {
           viewport={{ once: true }}
         >
           <motion.div
-            animate={{ 
+            animate={{
               y: [0, -15, 0],
-              rotate: [0, 5, 0]
+              rotate: [0, 5, 0],
             }}
-            transition={{ 
-              duration: 4, 
-              repeat: Infinity, 
-              ease: "easeInOut" 
-            }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             whileHover={{ scale: 1.1 }}
           >
             <Image
