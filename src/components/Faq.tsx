@@ -7,12 +7,16 @@ const faqs = [
   {
     question: "What is CreatorsLab?",
     answer:
-      "CreatorsLab is a community-powered Web3 launchpad that helps creators earn, spend, and grow through engagement, rewards, and promotion.",
+      "Creatorslab is a community driven engagement platform empowering creators and projects to grow their online presence, earn rewards and build a profitable audience.",
   },
   {
     question: "Who can join CreatorsLab?",
     answer:
       "Web3 creators, influencers, airdrop hunters, project founders, DAOs, and newcomers looking to collaborate and grow in Web3.",
+  },
+  {
+    question: "What is $CLS?",
+    answer: `Creatorslab seed – $CLS, is  a digital token that represents ownership and value, it serves as the native currency within the creatorslab ecosystem.\n Enabling users to participate in the network, contribute to content sharing and engagements.`,
   },
   {
     question: "How do I earn CLS?",
@@ -40,9 +44,9 @@ const faqs = [
       "CreatorsLab supports Solana wallets like Phantom and Solflare, plus email-based sign-ins.",
   },
   {
-    question: "Who backs CreatorsLab?",
+    question: "Powered by",
     answer:
-      "CreatorsLab is backed by Solana Foundation and SuperteamNG, ensuring trust, growth support, and Web3 reliability.",
+      "Solana Foundation and SuperteamNG, ensuring trust -  transparency and scalability for mass adoption.",
   },
 ];
 

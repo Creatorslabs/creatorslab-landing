@@ -46,23 +46,15 @@ function CTA() {
           viewport={{ once: true }}
         >
           <motion.h3
-            className="text-2xl sm:text-3xl lg:text-4xl font-syne font-bold leading-tight"
+            className="text-xl font-syne font-bold leading-tight"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            Amplify Your Voice, Earn, and Grow
+            The missing piece in Web3 growth is not just quests or rewards but a
+            monetization loop that benefits both creators and projects.
           </motion.h3>
-          <motion.p
-            className="text-sm sm:text-base"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            Complete tasks, engage with the community, and earn CLS rewards.
-          </motion.p>
           <motion.p
             className="text-sm sm:text-base"
             initial={{ opacity: 0, y: 20 }}
@@ -70,18 +62,8 @@ function CTA() {
             transition={{ duration: 0.6, delay: 0.5 }}
             viewport={{ once: true }}
           >
-            Spend CLS to promote content, referral links, or campaigns, and
-            expand your network.
-          </motion.p>
-          <motion.p
-            className="text-sm sm:text-base"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
-            Borrow gas instantly with GasPass to claim airdrops safely and
-            automatically.
+            Join the movement, amplify your voice, earn, engage & expand your
+            social presence.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

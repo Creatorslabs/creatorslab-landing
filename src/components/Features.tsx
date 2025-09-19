@@ -77,7 +77,7 @@ function Features() {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Earn, Spend, and Grow with CreatorsLab
+          Earn - Spend and Grow with CreatorsLab
         </motion.h2>
         <motion.p
           className="text-base sm:text-lg text-gray-500 max-w-2xl"
@@ -137,8 +137,8 @@ function Features() {
             </motion.div>
             <p className="text-lg font-medium">Spend</p>
             <p className="text-sm text-gray-500 text-center">
-              Use CLS to promote your content, referral links, or campaigns to
-              amplify reach.
+              Use CLS to promote your content's, referral links, or campaigns to
+              amplify reach
             </p>
           </div>
         </motion.div>
@@ -159,8 +159,8 @@ function Features() {
             </motion.div>
             <p className="text-lg font-medium">Grow</p>
             <p className="text-sm text-gray-500 text-center">
-              Amplify visibility, expand your network, and scale your impact
-              with CLS.
+              Gain visibility, expand your social network and scale your impact
+              with CLS
             </p>
           </div>
         </motion.div>

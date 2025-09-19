@@ -49,8 +49,7 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Join the movement to enable creators worldwide to grow, engage, and
-            earn.
+            Helping creators and projects overcome growth challenges.
           </motion.p>
 
           <motion.div
