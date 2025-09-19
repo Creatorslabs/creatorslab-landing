@@ -45,7 +45,7 @@ function CTA() {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <motion.h3
+          <motion.p
             className="text-xl font-syne font-bold leading-tight"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ function CTA() {
           >
             The missing piece in Web3 growth is not just quests or rewards but a
             monetization loop that benefits both creators and projects.
-          </motion.h3>
+          </motion.p>
           <motion.p
             className="text-sm sm:text-base"
             initial={{ opacity: 0, y: 20 }}

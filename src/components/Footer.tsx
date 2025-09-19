@@ -38,7 +38,7 @@ function Footer() {
         viewport={{ once: true }}
       >
         <a
-          href="https://facebook.com"
+          href="https://facebook.com/YOUR_FACEBOOK_PROFILE"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-blue-600"
@@ -46,7 +46,7 @@ function Footer() {
           <Facebook size={18} />
         </a>
         <a
-          href="https://youtube.com"
+          href="https://youtube.com/YOUR_YOUTUBE_CHANNEL"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-red-600"
@@ -54,7 +54,7 @@ function Footer() {
           <Youtube size={20} />
         </a>
         <a
-          href="https://instagram.com"
+          href="https://instagram.com/YOUR_INSTAGRAM_PROFILE"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-pink-500"
@@ -62,7 +62,7 @@ function Footer() {
           <Instagram size={18} />
         </a>
         <a
-          href="https://x.com"
+          href="https://x.com/YOUR_TWITTER_PROFILE"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-700"
@@ -70,7 +70,7 @@ function Footer() {
           <Twitter size={18} />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://linkedin.com/in/YOUR_LINKEDIN_PROFILE"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-blue-700"

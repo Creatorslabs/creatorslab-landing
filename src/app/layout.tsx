@@ -2,10 +2,44 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Creatorslab – Empowering Creators Worldwide",
+  title: "Creatorslab – Empowering Creators to Grow, Engage, and Earn",
   description:
-    "Grow your audience, engage your community, and earn with low-fee Solana blockchain support. Backed by Solana Foundation and SuperteamNG.",
+    "Creatorslab helps you grow your audience, engage your community, and earn on the low-fee Solana blockchain.",
   metadataBase: new URL("https://www.creatorslab.cc"),
+  keywords: [
+    "Creatorslab",
+    "Web3",
+    "Solana",
+    "Blockchain",
+    "Creators",
+    "Community",
+    "Creatorslab logo",
+    "Creators Lab app",
+    "CLS token",
+    "GasPass",
+    "empowering global creativity with Web3",
+    "Web3 growth platform",
+    "community-powered Web3 launchpad",
+    "creator economy Web3",
+    "Web3 growth challenges",
+    "earn CLS rewards",
+    "spend CLS to promote content",
+    "grow with CLS",
+    "gasless airdrops",
+    "claim airdrops without gas fees",
+    "borrow gas with GasPass",
+    "repay gas later Web3",
+    "promote campaigns with CLS",
+    "referral rewards Web3",
+    "creators in Web3",
+    "Web3 projects growth",
+    "amplify creator voice",
+    "reward community efforts",
+    "expand social presence Web3",
+    "powered by Solana Foundation",
+    "powered by Superteam NG",
+    "Solana blockchain creators",
+  ],
   alternates: {
     canonical: "https://www.creatorslab.cc",
   },
@@ -65,6 +99,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="alternate"
+          hrefLang="en"
+          href="https://www.creatorslab.cc/"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
