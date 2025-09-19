@@ -137,8 +137,8 @@ function Features() {
             </motion.div>
             <p className="text-lg font-medium">Spend</p>
             <p className="text-sm text-gray-500 text-center">
-              Use CLS to promote your content's, referral links, or campaigns to
-              amplify reach
+              Use CLS to promote your content&apos;s, referral links, or
+              campaigns to amplify reach
             </p>
           </div>
         </motion.div>
