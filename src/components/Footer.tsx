@@ -2,7 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Facebook, Youtube, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Twitter, Mail } from "lucide-react";
+import { SiMedium, SiTelegram, SiDiscord } from "react-icons/si";
 
 function Footer() {
   return (
@@ -31,51 +32,49 @@ function Footer() {
       </motion.p>
 
       <motion.div
-        className="flex justify-center gap-4 mt-4"
+        className="flex justify-center gap-5 mt-4"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
         viewport={{ once: true }}
       >
         <a
-          href="https://facebook.com/YOUR_FACEBOOK_PROFILE"
+          href="https://medium.com/@creatorslabseed"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-blue-600"
+          className="hover:text-black dark:hover:text-white"
         >
-          <Facebook size={18} />
+          <SiMedium size={20} />
         </a>
         <a
-          href="https://youtube.com/YOUR_YOUTUBE_CHANNEL"
+          href="https://discord.gg/HQb4BvhF"
           target="_blank"
           rel="noopener noreferrer"
+          className="hover:text-indigo-600"
+        >
+          <SiDiscord size={22} />
+        </a>
+        <a
+          href="https://x.com/creatorslabseed?t=yE69EEdVnMnsYQTaAHdA2w&s=09"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-gray-700 dark:hover:text-gray-300"
+        >
+          <Twitter size={20} />
+        </a>
+        <a
+          href="mailto:Creatorslabseed@gmail.com"
           className="hover:text-red-600"
         >
-          <Youtube size={20} />
+          <Mail size={20} />
         </a>
         <a
-          href="https://instagram.com/YOUR_INSTAGRAM_PROFILE"
+          href="https://t.me/+af4HKT5oss81MTQ0"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-pink-500"
+          className="hover:text-sky-500"
         >
-          <Instagram size={18} />
-        </a>
-        <a
-          href="https://x.com/YOUR_TWITTER_PROFILE"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-gray-700"
-        >
-          <Twitter size={18} />
-        </a>
-        <a
-          href="https://linkedin.com/in/YOUR_LINKEDIN_PROFILE"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-700"
-        >
-          <Linkedin size={18} />
+          <SiTelegram size={22} />
         </a>
       </motion.div>
     </motion.footer>

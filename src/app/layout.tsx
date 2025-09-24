@@ -96,7 +96,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link
@@ -109,7 +109,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased bg-black text-white">{children}</body>
     </html>
   );
 }
